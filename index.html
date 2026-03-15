@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tiffany de León · Diseñadora UI/UX</title>
+  <!-- CSS file -->
+  <link rel="stylesheet" href="style.css">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <!-- Google Fonts: outfits y space grotesk para un look más moderno -->
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Space+Grotesk:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- background dinámico con partículas y gradientes -->
+  <div class="noise"></div>
+  <div class="gradient-bg">
+    <div class="gradient-orb orb1"></div>
+    <div class="gradient-orb orb2"></div>
+    <div class="gradient-orb orb3"></div>
+  </div>
+
+  <div class="app-wrapper">
+    <header class="top-bar glass">
+      <div class="logo">✨ TIFFANY <span>DE LEÓN</span></div>
+      <nav class="nav-links">
+        <button class="nav-link active" data-section="home"><i class="fas fa-house"></i><span>Home</span></button>
+        <button class="nav-link" data-section="skills"><i class="fas fa-code"></i><span>Skills</span></button>
+        <button class="nav-link" data-section="projects"><i class="fas fa-rocket"></i><span>Projects</span></button>
+        <button class="nav-link" data-section="resume"><i class="fas fa-file-lines"></i><span>Resume</span></button>
+        <button class="nav-link" data-section="blog"><i class="fas fa-pen-fancy"></i><span>Blog</span></button>
+      </nav>
+    </header>
+
+    <main class="main-content glass-panel">
+      <!-- HOME SECTION - versión más visual -->
+      <section id="home" class="section active-section">
+        <div class="hero-grid">
+          <div class="hero-content">
+            <div class="chip-container">
+              <span class="chip"><i class="fas fa-map-pin"></i> Santo Domingo, RD</span>
+              <span class="chip"><i class="fas fa-graduation-cap"></i> UNAPEC · Est. término</span>
+            </div>
+            <h1 class="hero-title">
+              Diseñadora <br>
+              <span class="gradient-text">UI/UX & <br>Creative Developer</span>
+            </h1>
+            <p class="hero-description">
+              Estudiante de término de Diseño Gráfico con enfoque en interfaces funcionales y experiencia digital. 
+              Combino pensamiento visual con estructura estratégica para crear productos memorables.
+            </p>
+            <div class="hero-stats">
+              <div class="stat-item">
+                <span class="stat-number">800+</span>
+                <span class="stat-label">horas pasantía</span>
+              </div>
+              <div class="stat-item">
+                <span class="stat-number">C2</span>
+                <span class="stat-label">Inglés</span>
+              </div>
+              <div class="stat-item">
+                <span class="stat-number">3+</span>
+                <span class="stat-label">proyectos</span>
+              </div>
+            </div>
+            <div class="hero-actions">
+              <button class="btn-primary" id="exploreBtn"><i class="fas fa-arrow-down"></i> Ver proyectos</button>
+              <button class="btn-outline" id="contactBtn"><i class="fas fa-paper-plane"></i> Contactar</button>
+            </div>
+          </div>
+          <div class="hero-visual">
+            <div class="profile-blob">
+              <div class="profile-icon">
+                <i class="fas fa-paint-brush"></i>
+              </div>
+              <div class="floating-card card1">
+                <i class="fab fa-figma"></i>
+                <span>Figma</span>
+              </div>
+              <div class="floating-card card2">
+                <i class="fab fa-python"></i>
+                <span>Python</span>
+              </div>
+              <div class="floating-card card3">
+                <i class="fas fa-mobile-alt"></i>
+                <span>UI/UX</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SKILLS SECTION - con visualización tipo burbujas -->
+      <section id="skills" class="section">
+        <div class="section-header">
+          <h2 class="section-title"><i class="fas fa-code"></i> Habilidades & Aptitudes</h2>
+          <div class="title-decoration"></div>
+        </div>
+        
+        <div class="skills-showcase">
+          <div class="skill-bubble-group">
+            <div class="skill-bubble large" style="--delay:0s">
+              <i class="fas fa-search"></i>
+              <span>UX Research</span>
+            </div>
+            <div class="skill-bubble" style="--delay:0.2s">
+              <i class="fas fa-draw-polygon"></i>
+              <span>Wireframing</span>
+            </div>
+            <div class="skill-bubble" style="--delay:0.4s">
+              <i class="fas fa-mouse-pointer"></i>
+              <span>Prototipado</span>
+            </div>
+            <div class="skill-bubble large" style="--delay:0.6s">
+              <i class="fas fa-mobile-alt"></i>
+              <span>Responsive</span>
+            </div>
+            <div class="skill-bubble" style="--delay:0.8s">
+              <i class="fab fa-figma"></i>
+              <span>Figma</span>
+            </div>
+            <div class="skill-bubble" style="--delay:1s">
+              <i class="fas fa-code"></i>
+              <span>HTML/CSS</span>
+            </div>
+          </div>
+          
+          <div class="skill-cards-grid">
+            <div class="skill-card-modern">
+              <div class="skill-icon-gradient"><i class="fas fa-users"></i></div>
+              <h3>Blandas</h3>
+              <div class="skill-tags">
+                <span>Trabajo en equipo</span>
+                <span>Comunicación visual</span>
+                <span>Creatividad</span>
+              </div>
+            </div>
+            <div class="skill-card-modern">
+              <div class="skill-icon-gradient"><i class="fas fa-camera"></i></div>
+              <h3>Audiovisual</h3>
+              <div class="skill-tags">
+                <span>Edición video</span>
+                <span>Tricaster</span>
+                <span>Producción</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- PROJECTS SECTION - con tarjetas 3D -->
+      <section id="projects" class="section">
+        <div class="section-header">
+          <h2 class="section-title"><i class="fas fa-rocket"></i> Proyectos Destacados</h2>
+          <div class="title-decoration"></div>
+        </div>
+        <p class="section-subtitle">Haz clic en cualquier tarjeta para ver el walkthrough técnico completo</p>
+        
+        <div class="projects-grid-3d">
+          <div class="project-card-3d clickable-card" data-project="superlibrary">
+            <div class="card-inner">
+              <div class="card-front">
+                <div class="card-icon">📚</div>
+                <h3>SuperLibrary</h3>
+                <p>Gestión de bibliotecas digitales con IA y recomendaciones semánticas</p>
+                <div class="card-tech">
+                  <span>Python/Flask</span>
+                  <span>ML</span>
+                  <span>Embeddings</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-card-3d clickable-card" data-project="elarmador">
+            <div class="card-inner">
+              <div class="card-front">
+                <div class="card-icon">⚒️</div>
+                <h3>El Armador</h3>
+                <p>Plataforma para empresa de construcción con diseño moderno</p>
+                <div class="card-tech">
+                  <span>Flask</span>
+                  <span>HTML/CSS</span>
+                  <span>EmailJS</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-card-3d clickable-card" data-project="noteninja">
+            <div class="card-inner">
+              <div class="card-front">
+                <div class="card-icon">📝</div>
+                <h3>NoteNinja</h3>
+                <p>Herramienta educativa que automatiza creación de materiales de estudio</p>
+                <div class="card-tech">
+                  <span>Python</span>
+                  <span>PyPDF2</span>
+                  <span>Vanilla JS</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-card-3d experience-card">
+            <div class="card-inner">
+              <div class="card-front">
+                <div class="card-icon">📺</div>
+                <h3>Televida</h3>
+                <p>800 horas de pasantía en producción audiovisual</p>
+                <div class="card-tech">
+                  <span>Edición</span>
+                  <span>Tricaster</span>
+                  <span>Grabación</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- RESUME & CONTACT - con diseño moderno -->
+      <section id="resume" class="section">
+        <div class="section-header">
+          <h2 class="section-title"><i class="fas fa-file-lines"></i> Formación & Contacto</h2>
+          <div class="title-decoration"></div>
+        </div>
+        
+        <div class="resume-modern-grid">
+          <div class="resume-modern-card">
+            <div class="resume-timeline">
+              <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                  <h3>Licenciatura en Diseño Gráfico</h3>
+                  <p class="timeline-place">UNAPEC · 2022 - presente</p>
+                  <p>Estudiante de término, enfoque en UI/UX y experiencia digital</p>
+                </div>
+              </div>
+              <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                  <h3>Técnico Audiovisual</h3>
+                  <p class="timeline-place">Instituto San Juan Bautista · 2020-2022</p>
+                  <p>Preproducción, producción y postproducción multimedia</p>
+                </div>
+              </div>
+              <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                  <h3>Cursos Google</h3>
+                  <p class="timeline-place">Marketing Digital · Competencias Digitales</p>
+                </div>
+              </div>
+            </div>
+            
+            <div class="resume-download">
+              <button class="btn-primary" id="resumeDownload"><i class="fas fa-download"></i> Descargar CV</button>
+            </div>
+          </div>
+          
+          <div class="contact-modern-card">
+            <h3>Conectemos</h3>
+            <div class="contact-info-modern">
+              <a href="tel:8494045278" class="contact-item">
+                <i class="fas fa-phone-alt"></i>
+                <span>849-404-5278</span>
+              </a>
+              <a href="mailto:paulettedeleondg@gmail.com" class="contact-item">
+                <i class="fas fa-envelope"></i>
+                <span>paulettedeleondg@gmail.com</span>
+              </a>
+              <a href="https://www.linkedin.com/in/paulettedeleon/" target="_blank" class="contact-item">
+                <i class="fab fa-linkedin"></i>
+                <span>linkedin.com/in/paulettedeleon</span>
+              </a>
+              <a href="https://github.com/PixXy-wEb" target="_blank" class="contact-item">
+                <i class="fab fa-github"></i>
+                <span>@PixXy-wEb</span>
+              </a>
+            </div>
+            <div class="contact-cta">
+              <p>Disponible para oportunidades de pasantía</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- BLOG SECTION - con diseño de tarjetas verticales -->
+      <section id="blog" class="section">
+        <div class="section-header">
+          <h2 class="section-title"><i class="fas fa-pen-fancy"></i> Blog & Tutoriales</h2>
+          <div class="title-decoration"></div>
+        </div>
+        
+        <div class="blog-modern-grid">
+          <div class="blog-card-vertical">
+            <div class="blog-category">Tutorial</div>
+            <h3>🎨 Introducción a Figma</h3>
+            <p>Componentes, auto layout y prototipado rápido para principiantes.</p>
+            <div class="blog-meta">
+              <span><i class="far fa-calendar"></i> Jun 2025</span>
+              <span><i class="far fa-clock"></i> 5 min</span>
+            </div>
+          </div>
+          
+          <div class="blog-card-vertical">
+            <div class="blog-category">UX</div>
+            <h3>📱 UX Research desde cero</h3>
+            <p>Cómo hacer entrevistas de usuario y pruebas de usabilidad efectivas.</p>
+            <div class="blog-meta">
+              <span><i class="far fa-calendar"></i> May 2025</span>
+              <span><i class="far fa-clock"></i> 7 min</span>
+            </div>
+          </div>
+          
+          <div class="blog-card-vertical">
+            <div class="blog-category">Video</div>
+            <h3>🎬 Edición de video para redes</h3>
+            <p>Consejos rápidos de edición que aprendí en Televida.</p>
+            <div class="blog-meta">
+              <span><i class="far fa-calendar"></i> Abr 2025</span>
+              <span><i class="far fa-clock"></i> 4 min</span>
+            </div>
+          </div>
+          
+          <div class="blog-card-vertical">
+            <div class="blog-category">Diseño</div>
+            <h3>⚡ Diseño responsive</h3>
+            <p>Principios básicos para interfaces adaptables a todos los dispositivos.</p>
+            <div class="blog-meta">
+              <span><i class="far fa-calendar"></i> Mar 2025</span>
+              <span><i class="far fa-clock"></i> 6 min</span>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    
+    <footer class="footer-modern">
+      <p>✶ diseñado con ♥︎ por Tiffany de León · 2025 ✶</p>
+    </footer>
+  </div>
+
+  <!-- MODAL para walkthrough de proyectos (mejorado) -->
+  <div id="projectModal" class="modal-neon">
+    <div class="modal-content-neon">
+      <button class="modal-close-neon">&times;</button>
+      <div id="modalContent" class="modal-body-neon"></div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
