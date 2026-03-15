@@ -2,17 +2,18 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
   <title>Tiffany de León · Diseñadora UI/UX</title>
   <!-- CSS file -->
   <link rel="stylesheet" href="style.css">
   <!-- Font Awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-  <!-- Google Fonts: outfits y space grotesk para un look más moderno -->
+  <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Space+Grotesk:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
 </head>
 <body>
-  <!-- background dinámico con partículas y gradientes -->
+  <!-- background dinámico -->
   <div class="noise"></div>
   <div class="gradient-bg">
     <div class="gradient-orb orb1"></div>
@@ -24,16 +25,16 @@
     <header class="top-bar glass">
       <div class="logo">✨ TIFFANY <span>DE LEÓN</span></div>
       <nav class="nav-links">
-        <button class="nav-link active" data-section="home"><i class="fas fa-house"></i><span>Home</span></button>
-        <button class="nav-link" data-section="skills"><i class="fas fa-code"></i><span>Skills</span></button>
-        <button class="nav-link" data-section="projects"><i class="fas fa-rocket"></i><span>Projects</span></button>
-        <button class="nav-link" data-section="resume"><i class="fas fa-file-lines"></i><span>Resume</span></button>
-        <button class="nav-link" data-section="blog"><i class="fas fa-pen-fancy"></i><span>Blog</span></button>
+        <button class="nav-link active" data-section="home"><i class="fas fa-house"></i><span class="nav-text">Home</span></button>
+        <button class="nav-link" data-section="skills"><i class="fas fa-code"></i><span class="nav-text">Skills</span></button>
+        <button class="nav-link" data-section="projects"><i class="fas fa-rocket"></i><span class="nav-text">Projects</span></button>
+        <button class="nav-link" data-section="resume"><i class="fas fa-file-lines"></i><span class="nav-text">Resume</span></button>
+        <button class="nav-link" data-section="blog"><i class="fas fa-pen-fancy"></i><span class="nav-text">Blog</span></button>
       </nav>
     </header>
 
     <main class="main-content glass-panel">
-      <!-- HOME SECTION - versión más visual -->
+      <!-- HOME SECTION -->
       <section id="home" class="section active-section">
         <div class="hero-grid">
           <div class="hero-content">
@@ -43,16 +44,16 @@
             </div>
             <h1 class="hero-title">
               Diseñadora <br>
-              <span class="gradient-text">UI/UX & <br>Creative Developer</span>
+              <span class="gradient-text">UI/UX & <br class="mobile-break">Creative Developer</span>
             </h1>
             <p class="hero-description">
               Estudiante de término de Diseño Gráfico con enfoque en interfaces funcionales y experiencia digital. 
-              Combino pensamiento visual con estructura estratégica para crear productos memorables.
+              Combino pensamiento visual con estructura estratégica.
             </p>
             <div class="hero-stats">
               <div class="stat-item">
                 <span class="stat-number">800+</span>
-                <span class="stat-label">horas pasantía</span>
+                <span class="stat-label">horas</span>
               </div>
               <div class="stat-item">
                 <span class="stat-number">C2</span>
@@ -64,8 +65,8 @@
               </div>
             </div>
             <div class="hero-actions">
-              <button class="btn-primary" id="exploreBtn"><i class="fas fa-arrow-down"></i> Ver proyectos</button>
-              <button class="btn-outline" id="contactBtn"><i class="fas fa-paper-plane"></i> Contactar</button>
+              <button class="btn-primary" id="exploreBtn"><i class="fas fa-arrow-down"></i> <span>Ver proyectos</span></button>
+              <button class="btn-outline" id="contactBtn"><i class="fas fa-paper-plane"></i> <span>Contactar</span></button>
             </div>
           </div>
           <div class="hero-visual">
@@ -90,10 +91,10 @@
         </div>
       </section>
 
-      <!-- SKILLS SECTION - con visualización tipo burbujas -->
+      <!-- SKILLS SECTION -->
       <section id="skills" class="section">
         <div class="section-header">
-          <h2 class="section-title"><i class="fas fa-code"></i> Habilidades & Aptitudes</h2>
+          <h2 class="section-title"><i class="fas fa-code"></i> Habilidades</h2>
           <div class="title-decoration"></div>
         </div>
         
@@ -131,7 +132,7 @@
               <h3>Blandas</h3>
               <div class="skill-tags">
                 <span>Trabajo en equipo</span>
-                <span>Comunicación visual</span>
+                <span>Comunicación</span>
                 <span>Creatividad</span>
               </div>
             </div>
@@ -139,7 +140,7 @@
               <div class="skill-icon-gradient"><i class="fas fa-camera"></i></div>
               <h3>Audiovisual</h3>
               <div class="skill-tags">
-                <span>Edición video</span>
+                <span>Edición</span>
                 <span>Tricaster</span>
                 <span>Producción</span>
               </div>
@@ -148,13 +149,13 @@
         </div>
       </section>
 
-      <!-- PROJECTS SECTION - con tarjetas 3D -->
+      <!-- PROJECTS SECTION -->
       <section id="projects" class="section">
         <div class="section-header">
-          <h2 class="section-title"><i class="fas fa-rocket"></i> Proyectos Destacados</h2>
+          <h2 class="section-title"><i class="fas fa-rocket"></i> Proyectos</h2>
           <div class="title-decoration"></div>
         </div>
-        <p class="section-subtitle">Haz clic en cualquier tarjeta para ver el walkthrough técnico completo</p>
+        <p class="section-subtitle">Haz clic en cada tarjeta para ver el walkthrough técnico</p>
         
         <div class="projects-grid-3d">
           <div class="project-card-3d clickable-card" data-project="superlibrary">
@@ -162,11 +163,11 @@
               <div class="card-front">
                 <div class="card-icon">📚</div>
                 <h3>SuperLibrary</h3>
-                <p>Gestión de bibliotecas digitales con IA y recomendaciones semánticas</p>
+                <p class="card-desktop">Gestión de bibliotecas digitales con IA</p>
+                <p class="card-mobile">Biblioteca con IA</p>
                 <div class="card-tech">
-                  <span>Python/Flask</span>
+                  <span>Python</span>
                   <span>ML</span>
-                  <span>Embeddings</span>
                 </div>
               </div>
             </div>
@@ -177,11 +178,11 @@
               <div class="card-front">
                 <div class="card-icon">⚒️</div>
                 <h3>El Armador</h3>
-                <p>Plataforma para empresa de construcción con diseño moderno</p>
+                <p class="card-desktop">Plataforma para construcción</p>
+                <p class="card-mobile">Web corporativa</p>
                 <div class="card-tech">
                   <span>Flask</span>
                   <span>HTML/CSS</span>
-                  <span>EmailJS</span>
                 </div>
               </div>
             </div>
@@ -190,13 +191,13 @@
           <div class="project-card-3d clickable-card" data-project="noteninja">
             <div class="card-inner">
               <div class="card-front">
-                <div class="card-icon">📝</div>
+                <div class="-card-icon">📝</div>
                 <h3>NoteNinja</h3>
-                <p>Herramienta educativa que automatiza creación de materiales de estudio</p>
+                <p class="card-desktop">Automatización de estudio</p>
+                <p class="card-mobile">Educación</p>
                 <div class="card-tech">
                   <span>Python</span>
                   <span>PyPDF2</span>
-                  <span>Vanilla JS</span>
                 </div>
               </div>
             </div>
@@ -207,11 +208,11 @@
               <div class="card-front">
                 <div class="card-icon">📺</div>
                 <h3>Televida</h3>
-                <p>800 horas de pasantía en producción audiovisual</p>
+                <p class="card-desktop">800h pasantía audiovisual</p>
+                <p class="card-mobile">800h pasantía</p>
                 <div class="card-tech">
                   <span>Edición</span>
-                  <span>Tricaster</span>
-                  <span>Grabación</span>
+                  <span>Producción</span>
                 </div>
               </div>
             </div>
@@ -219,10 +220,10 @@
         </div>
       </section>
 
-      <!-- RESUME & CONTACT - con diseño moderno -->
+      <!-- RESUME & CONTACT SECTION -->
       <section id="resume" class="section">
         <div class="section-header">
-          <h2 class="section-title"><i class="fas fa-file-lines"></i> Formación & Contacto</h2>
+          <h2 class="section-title"><i class="fas fa-file-lines"></i> Formación</h2>
           <div class="title-decoration"></div>
         </div>
         
@@ -234,7 +235,7 @@
                 <div class="timeline-content">
                   <h3>Licenciatura en Diseño Gráfico</h3>
                   <p class="timeline-place">UNAPEC · 2022 - presente</p>
-                  <p>Estudiante de término, enfoque en UI/UX y experiencia digital</p>
+                  <p class="timeline-desc">Estudiante de término, enfoque UI/UX</p>
                 </div>
               </div>
               <div class="timeline-item">
@@ -242,7 +243,6 @@
                 <div class="timeline-content">
                   <h3>Técnico Audiovisual</h3>
                   <p class="timeline-place">Instituto San Juan Bautista · 2020-2022</p>
-                  <p>Preproducción, producción y postproducción multimedia</p>
                 </div>
               </div>
               <div class="timeline-item">
@@ -252,10 +252,6 @@
                   <p class="timeline-place">Marketing Digital · Competencias Digitales</p>
                 </div>
               </div>
-            </div>
-            
-            <div class="resume-download">
-              <button class="btn-primary" id="resumeDownload"><i class="fas fa-download"></i> Descargar CV</button>
             </div>
           </div>
           
@@ -272,24 +268,24 @@
               </a>
               <a href="https://www.linkedin.com/in/paulettedeleon/" target="_blank" class="contact-item">
                 <i class="fab fa-linkedin"></i>
-                <span>linkedin.com/in/paulettedeleon</span>
+                <span class="contact-text">LinkedIn</span>
               </a>
               <a href="https://github.com/PixXy-wEb" target="_blank" class="contact-item">
                 <i class="fab fa-github"></i>
-                <span>@PixXy-wEb</span>
+                <span class="contact-text">GitHub</span>
               </a>
             </div>
             <div class="contact-cta">
-              <p>Disponible para oportunidades de pasantía</p>
+              <p>📢 Disponible para pasantías</p>
             </div>
           </div>
         </div>
       </section>
 
-      <!-- BLOG SECTION - con diseño de tarjetas verticales -->
+      <!-- BLOG SECTION -->
       <section id="blog" class="section">
         <div class="section-header">
-          <h2 class="section-title"><i class="fas fa-pen-fancy"></i> Blog & Tutoriales</h2>
+          <h2 class="section-title"><i class="fas fa-pen-fancy"></i> Blog</h2>
           <div class="title-decoration"></div>
         </div>
         
@@ -297,40 +293,36 @@
           <div class="blog-card-vertical">
             <div class="blog-category">Tutorial</div>
             <h3>🎨 Introducción a Figma</h3>
-            <p>Componentes, auto layout y prototipado rápido para principiantes.</p>
+            <p>Componentes y prototipado rápido.</p>
             <div class="blog-meta">
               <span><i class="far fa-calendar"></i> Jun 2025</span>
-              <span><i class="far fa-clock"></i> 5 min</span>
             </div>
           </div>
           
           <div class="blog-card-vertical">
             <div class="blog-category">UX</div>
-            <h3>📱 UX Research desde cero</h3>
-            <p>Cómo hacer entrevistas de usuario y pruebas de usabilidad efectivas.</p>
+            <h3>📱 UX Research</h3>
+            <p>Entrevistas y pruebas de usabilidad.</p>
             <div class="blog-meta">
               <span><i class="far fa-calendar"></i> May 2025</span>
-              <span><i class="far fa-clock"></i> 7 min</span>
             </div>
           </div>
           
           <div class="blog-card-vertical">
             <div class="blog-category">Video</div>
-            <h3>🎬 Edición de video para redes</h3>
-            <p>Consejos rápidos de edición que aprendí en Televida.</p>
+            <h3>🎬 Edición de video</h3>
+            <p>Consejos de Televida.</p>
             <div class="blog-meta">
               <span><i class="far fa-calendar"></i> Abr 2025</span>
-              <span><i class="far fa-clock"></i> 4 min</span>
             </div>
           </div>
           
           <div class="blog-card-vertical">
             <div class="blog-category">Diseño</div>
             <h3>⚡ Diseño responsive</h3>
-            <p>Principios básicos para interfaces adaptables a todos los dispositivos.</p>
+            <p>Principios básicos.</p>
             <div class="blog-meta">
               <span><i class="far fa-calendar"></i> Mar 2025</span>
-              <span><i class="far fa-clock"></i> 6 min</span>
             </div>
           </div>
         </div>
@@ -342,7 +334,7 @@
     </footer>
   </div>
 
-  <!-- MODAL para walkthrough de proyectos (mejorado) -->
+  <!-- MODAL -->
   <div id="projectModal" class="modal-neon">
     <div class="modal-content-neon">
       <button class="modal-close-neon">&times;</button>
