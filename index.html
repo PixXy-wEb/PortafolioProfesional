@@ -10,7 +10,6 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Space+Grotesk:wght@300;400;500;600&display=swap" rel="stylesheet">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
 </head>
 <body>
   <!-- background dinámico -->
@@ -149,7 +148,7 @@
         </div>
       </section>
 
-      <!-- PROJECTS SECTION -->
+      <!-- PROJECTS SECTION - CORREGIDO: Cards con efecto visual mejorado -->
       <section id="projects" class="section">
         <div class="section-header">
           <h2 class="section-title"><i class="fas fa-rocket"></i> Proyectos</h2>
@@ -158,69 +157,81 @@
         <p class="section-subtitle">Haz clic en cada tarjeta para ver el walkthrough técnico</p>
         
         <div class="projects-grid-3d">
+          <!-- SuperLibrary Card -->
           <div class="project-card-3d clickable-card" data-project="superlibrary">
-            <div class="card-inner">
-              <div class="card-front">
-                <div class="card-icon">📚</div>
-                <h3>SuperLibrary</h3>
-                <p class="card-desktop">Gestión de bibliotecas digitales con IA</p>
-                <p class="card-mobile">Biblioteca con IA</p>
-                <div class="card-tech">
-                  <span>Python</span>
-                  <span>ML</span>
-                </div>
+            <div class="card-content visible-card">
+              <div class="card-icon">📚</div>
+              <h3>SuperLibrary</h3>
+              <p class="card-desktop">Sistema de bibliotecas digitales con IA y recomendaciones semánticas</p>
+              <p class="card-mobile">Biblioteca con IA</p>
+              <div class="card-tech">
+                <span>Python/Flask</span>
+                <span>ML</span>
+                <span>Embeddings</span>
+              </div>
+              <div class="card-hint">
+                <i class="fas fa-click-pointer"></i> Click para walkthrough
               </div>
             </div>
           </div>
 
+          <!-- El Armador Card -->
           <div class="project-card-3d clickable-card" data-project="elarmador">
-            <div class="card-inner">
-              <div class="card-front">
-                <div class="card-icon">⚒️</div>
-                <h3>El Armador</h3>
-                <p class="card-desktop">Plataforma para construcción</p>
-                <p class="card-mobile">Web corporativa</p>
-                <div class="card-tech">
-                  <span>Flask</span>
-                  <span>HTML/CSS</span>
-                </div>
+            <div class="card-content visible-card">
+              <div class="card-icon">⚒️</div>
+              <h3>El Armador</h3>
+              <p class="card-desktop">Plataforma web para empresa de construcción con diseño moderno</p>
+              <p class="card-mobile">Web corporativa</p>
+              <div class="card-tech">
+                <span>Flask</span>
+                <span>HTML/CSS</span>
+                <span>EmailJS</span>
+              </div>
+              <div class="card-hint">
+                <i class="fas fa-click-pointer"></i> Click para walkthrough
               </div>
             </div>
           </div>
 
+          <!-- NoteNinja Card -->
           <div class="project-card-3d clickable-card" data-project="noteninja">
-            <div class="card-inner">
-              <div class="card-front">
-                <div class="card-icon">📝</div>
-                <h3>NoteNinja</h3>
-                <p class="card-desktop">Automatización de estudio</p>
-                <p class="card-mobile">Educación</p>
-                <div class="card-tech">
-                  <span>Python</span>
-                  <span>PyPDF2</span>
-                </div>
+            <div class="card-content visible-card">
+              <div class="card-icon">📝</div>
+              <h3>NoteNinja</h3>
+              <p class="card-desktop">Herramienta educativa que automatiza creación de materiales de estudio</p>
+              <p class="card-mobile">Educación</p>
+              <div class="card-tech">
+                <span>Python</span>
+                <span>PyPDF2</span>
+                <span>Flask</span>
+              </div>
+              <div class="card-hint">
+                <i class="fas fa-click-pointer"></i> Click para walkthrough
               </div>
             </div>
           </div>
 
+          <!-- Televida Card -->
           <div class="project-card-3d experience-card">
-            <div class="card-inner">
-              <div class="card-front">
-                <div class="card-icon">📺</div>
-                <h3>Televida</h3>
-                <p class="card-desktop">800h pasantía audiovisual</p>
-                <p class="card-mobile">800h pasantía</p>
-                <div class="card-tech">
-                  <span>Edición</span>
-                  <span>Producción</span>
-                </div>
+            <div class="card-content visible-card">
+              <div class="card-icon">📺</div>
+              <h3>Televida</h3>
+              <p class="card-desktop">800 horas de pasantía en producción audiovisual</p>
+              <p class="card-mobile">800h pasantía</p>
+              <div class="card-tech">
+                <span>Edición</span>
+                <span>Tricaster</span>
+                <span>Producción</span>
+              </div>
+              <div class="card-hint">
+                <i class="fas fa-check-circle"></i> Experiencia
               </div>
             </div>
           </div>
         </div>
       </section>
 
-      <!-- RESUME & CONTACT SECTION -->
+      <!-- RESUME & CONTACT SECTION - CORREGIDO: Links con estilo visible -->
       <section id="resume" class="section">
         <div class="section-header">
           <h2 class="section-title"><i class="fas fa-file-lines"></i> Formación</h2>
@@ -260,11 +271,11 @@
             <div class="contact-info-modern">
               <a href="tel:8494045278" class="contact-item">
                 <i class="fas fa-phone-alt"></i>
-                <span>849-404-5278</span>
+                <span class="contact-text">849-404-5278</span>
               </a>
               <a href="mailto:paulettedeleondg@gmail.com" class="contact-item">
                 <i class="fas fa-envelope"></i>
-                <span>paulettedeleondg@gmail.com</span>
+                <span class="contact-text">paulettedeleondg@gmail.com</span>
               </a>
               <a href="https://www.linkedin.com/in/paulettedeleon/" target="_blank" class="contact-item">
                 <i class="fab fa-linkedin"></i>
@@ -276,7 +287,7 @@
               </a>
             </div>
             <div class="contact-cta">
-              <p>📢 Disponible para pasantías</p>
+              <p>📢 Disponible para oportunidades de pasantía</p>
             </div>
           </div>
         </div>
@@ -293,7 +304,7 @@
           <div class="blog-card-vertical">
             <div class="blog-category">Tutorial</div>
             <h3>🎨 Introducción a Figma</h3>
-            <p>Componentes y prototipado rápido.</p>
+            <p>Componentes, auto layout y prototipado rápido.</p>
             <div class="blog-meta">
               <span><i class="far fa-calendar"></i> Jun 2025</span>
             </div>
@@ -301,8 +312,8 @@
           
           <div class="blog-card-vertical">
             <div class="blog-category">UX</div>
-            <h3>📱 UX Research</h3>
-            <p>Entrevistas y pruebas de usabilidad.</p>
+            <h3>📱 UX Research desde cero</h3>
+            <p>Entrevistas y pruebas de usabilidad efectivas.</p>
             <div class="blog-meta">
               <span><i class="far fa-calendar"></i> May 2025</span>
             </div>
@@ -311,7 +322,7 @@
           <div class="blog-card-vertical">
             <div class="blog-category">Video</div>
             <h3>🎬 Edición de video</h3>
-            <p>Consejos de Televida.</p>
+            <p>Consejos rápidos aprendidos en Televida.</p>
             <div class="blog-meta">
               <span><i class="far fa-calendar"></i> Abr 2025</span>
             </div>
@@ -320,7 +331,7 @@
           <div class="blog-card-vertical">
             <div class="blog-category">Diseño</div>
             <h3>⚡ Diseño responsive</h3>
-            <p>Principios básicos.</p>
+            <p>Principios básicos para interfaces adaptables.</p>
             <div class="blog-meta">
               <span><i class="far fa-calendar"></i> Mar 2025</span>
             </div>
@@ -330,7 +341,7 @@
     </main>
     
     <footer class="footer-modern">
-      <p>✶ diseñado con ♥︎ por Tiffany de León · 2026 ✶</p>
+      <p>✶ diseñado con ♥︎ por Tiffany de León · 2025 ✶</p>
     </footer>
   </div>
 
