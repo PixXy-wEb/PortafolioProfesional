@@ -1,19 +1,19 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
-  <title>Tiffany de León · Diseñadora UI/UX</title>
-  <!-- CSS file -->
-  <link rel="stylesheet" href="style.css">
-  <!-- Font Awesome -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Space+Grotesk:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes" />
+  <title>Tiffany de León · UI/UX Designer & Frontend Developer</title>
+  <meta name="description" content="Portfolio de Tiffany de León – UI/UX Designer & Frontend Developer basada en Santo Domingo, RD." />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>✨</text></svg>" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Space+Grotesk:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="portfolio.css" />
 </head>
 <body>
-  <!-- background dinámico -->
-  <div class="noise"></div>
+  <div class="noise-overlay"></div>
   <div class="gradient-bg">
     <div class="gradient-orb orb1"></div>
     <div class="gradient-orb orb2"></div>
@@ -21,253 +21,345 @@
   </div>
 
   <div class="app-wrapper">
+    <!-- NAV -->
     <header class="top-bar glass">
       <div class="logo">✨ TIFFANY <span>DE LEÓN</span></div>
       <nav class="nav-links">
-        <button class="nav-link active" data-section="home"><i class="fas fa-house"></i><span class="nav-text">Home</span></button>
-        <button class="nav-link" data-section="skills"><i class="fas fa-code"></i><span class="nav-text">Skills</span></button>
-        <button class="nav-link" data-section="projects"><i class="fas fa-rocket"></i><span class="nav-text">Projects</span></button>
-        <button class="nav-link" data-section="resume"><i class="fas fa-file-lines"></i><span class="nav-text">Resume</span></button>
-        <button class="nav-link" data-section="blog"><i class="fas fa-pen-fancy"></i><span class="nav-text">Blog</span></button>
+        <button class="nav-link active" data-section="home" aria-label="Home">
+          <i class="fas fa-house"></i>
+          <span class="nav-text">Home</span>
+        </button>
+        <button class="nav-link" data-section="about" aria-label="About">
+          <i class="fas fa-user"></i>
+          <span class="nav-text">About</span>
+        </button>
+        <button class="nav-link" data-section="skills" aria-label="Skills">
+          <i class="fas fa-code"></i>
+          <span class="nav-text">Skills</span>
+        </button>
+        <button class="nav-link" data-section="projects" aria-label="Projects">
+          <i class="fas fa-rocket"></i>
+          <span class="nav-text">Projects</span>
+        </button>
+        <button class="nav-link" data-section="resume" aria-label="Resume">
+          <i class="fas fa-file-lines"></i>
+          <span class="nav-text">Resume</span>
+        </button>
+        <button class="nav-link" data-section="blog" aria-label="Blog">
+          <i class="fas fa-pen-fancy"></i>
+          <span class="nav-text">Blog</span>
+        </button>
       </nav>
     </header>
 
-    <main class="main-content glass-panel">
-      <!-- HOME SECTION -->
-      <section id="home" class="section active-section">
+    <main class="glass-panel" id="main-content">
+      <!-- HOME -->
+      <section id="home" class="section">
         <div class="hero-grid">
           <div class="hero-content">
             <div class="chip-container">
               <span class="chip"><i class="fas fa-map-pin"></i> Santo Domingo, RD</span>
-              <span class="chip"><i class="fas fa-graduation-cap"></i> UNAPEC · Est. término</span>
+              <span class="chip"><i class="fas fa-graduation-cap"></i> UNAPEC · Final Year</span>
+              <span class="chip chip-available"><i class="fas fa-circle-dot"></i> Open to internships</span>
             </div>
+
             <h1 class="hero-title">
-              Diseñadora <br>
-              <span class="gradient-text">UI/UX & <br class="mobile-break">Creative Developer</span>
+              Tiffany <br />
+              <span class="gradient-text">UI/UX & Creative<br class="mobile-break" /> Developer</span>
             </h1>
+
             <p class="hero-description">
-              Estudiante de término de Diseño Gráfico con enfoque en interfaces funcionales y experiencia digital. 
-              Combino pensamiento visual con estructura estratégica.
+              Final-year Graphic Design student specializing in UI/UX and full-stack development.
+              I bridge the gap between beautiful design and functional code — from Figma wireframes
+              to deployed web applications.
             </p>
+
+            <div class="hero-job-target">
+              <i class="fas fa-bullseye"></i>
+              <span>
+                Looking for a <strong>UI/UX design or frontend/fullstack internship</strong> where I can
+                ship real products and grow fast.
+              </span>
+            </div>
+
             <div class="hero-stats">
               <div class="stat-item">
                 <span class="stat-number">800+</span>
-                <span class="stat-label">horas</span>
+                <span class="stat-label">design hours</span>
               </div>
               <div class="stat-item">
                 <span class="stat-number">C2</span>
-                <span class="stat-label">Inglés</span>
+                <span class="stat-label">English</span>
               </div>
               <div class="stat-item">
-                <span class="stat-number">3+</span>
-                <span class="stat-label">proyectos</span>
+                <span class="stat-number">4</span>
+                <span class="stat-label">projects shipped</span>
+              </div>
+              <div class="stat-item">
+                <span class="stat-number">1</span>
+                <span class="stat-label">live client site</span>
               </div>
             </div>
+
             <div class="hero-actions">
-              <button class="btn-primary" id="exploreBtn"><i class="fas fa-arrow-down"></i> <span>Ver proyectos</span></button>
-              <button class="btn-outline" id="contactBtn"><i class="fas fa-paper-plane"></i> <span>Contactar</span></button>
+              <button class="btn-primary" data-go="projects">
+                <i class="fas fa-rocket"></i> <span>See My Work</span>
+              </button>
+              <button class="btn-outline" data-go="about">
+                <i class="fas fa-user"></i> <span>About Me</span>
+              </button>
+              <a href="mailto:paulettedeleondg@gmail.com?subject=Internship%20Opportunity" class="btn-accent">
+                <i class="fas fa-paper-plane"></i> <span>Hire Me</span>
+              </a>
             </div>
           </div>
+
           <div class="hero-visual">
             <div class="profile-blob">
               <div class="profile-icon">
                 <i class="fas fa-paint-brush"></i>
               </div>
               <div class="floating-card card1">
-                <i class="fab fa-figma"></i>
+                <i class="fab fa-figma" style="color:#a259ff"></i>
                 <span>Figma</span>
               </div>
               <div class="floating-card card2">
-                <i class="fab fa-python"></i>
+                <i class="fab fa-python" style="color:#3776ab"></i>
                 <span>Python</span>
               </div>
               <div class="floating-card card3">
-                <i class="fas fa-mobile-alt"></i>
-                <span>UI/UX</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- SKILLS SECTION -->
-      <section id="skills" class="section">
-        <div class="section-header">
-          <h2 class="section-title"><i class="fas fa-code"></i> Habilidades</h2>
-          <div class="title-decoration"></div>
-        </div>
-        
-        <div class="skills-showcase">
-          <div class="skill-bubble-group">
-            <div class="skill-bubble large" style="--delay:0s">
-              <i class="fas fa-search"></i>
-              <span>UX Research</span>
-            </div>
-            <div class="skill-bubble" style="--delay:0.2s">
-              <i class="fas fa-draw-polygon"></i>
-              <span>Wireframing</span>
-            </div>
-            <div class="skill-bubble" style="--delay:0.4s">
-              <i class="fas fa-mouse-pointer"></i>
-              <span>Prototipado</span>
-            </div>
-            <div class="skill-bubble large" style="--delay:0.6s">
-              <i class="fas fa-mobile-alt"></i>
-              <span>Responsive</span>
-            </div>
-            <div class="skill-bubble" style="--delay:0.8s">
-              <i class="fab fa-figma"></i>
-              <span>Figma</span>
-            </div>
-            <div class="skill-bubble" style="--delay:1s">
-              <i class="fas fa-code"></i>
-              <span>HTML/CSS</span>
-            </div>
-          </div>
-          
-          <div class="skill-cards-grid">
-            <div class="skill-card-modern">
-              <div class="skill-icon-gradient"><i class="fas fa-users"></i></div>
-              <h3>Blandas</h3>
-              <div class="skill-tags">
-                <span>Trabajo en equipo</span>
-                <span>Comunicación</span>
-                <span>Creatividad</span>
-              </div>
-            </div>
-            <div class="skill-card-modern">
-              <div class="skill-icon-gradient"><i class="fas fa-camera"></i></div>
-              <h3>Audiovisual</h3>
-              <div class="skill-tags">
-                <span>Edición</span>
-                <span>Tricaster</span>
-                <span>Producción</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- PROJECTS SECTION - CORREGIDO: Cards con efecto visual mejorado -->
-      <section id="projects" class="section">
-        <div class="section-header">
-          <h2 class="section-title"><i class="fas fa-rocket"></i> Proyectos</h2>
-          <div class="title-decoration"></div>
-        </div>
-        <p class="section-subtitle">Haz clic en cada tarjeta para ver el walkthrough técnico</p>
-        
-        <div class="projects-grid-3d">
-          <!-- SuperLibrary Card -->
-          <div class="project-card-3d clickable-card" data-project="superlibrary">
-            <div class="card-content visible-card">
-              <div class="card-icon">📚</div>
-              <h3>SuperLibrary</h3>
-              <p class="card-desktop">Sistema de bibliotecas digitales con IA y recomendaciones semánticas</p>
-              <p class="card-mobile">Biblioteca con IA</p>
-              <div class="card-tech">
-                <span>Python/Flask</span>
-                <span>ML</span>
-                <span>Embeddings</span>
-              </div>
-              <div class="card-hint">
-                <i class="fas fa-click-pointer"></i> Click para walkthrough
-              </div>
-            </div>
-          </div>
-
-          <!-- El Armador Card -->
-          <div class="project-card-3d clickable-card" data-project="elarmador">
-            <div class="card-content visible-card">
-              <div class="card-icon">⚒️</div>
-              <h3>El Armador</h3>
-              <p class="card-desktop">Plataforma web para empresa de construcción con diseño moderno</p>
-              <p class="card-mobile">Web corporativa</p>
-              <div class="card-tech">
-                <span>Flask</span>
-                <span>HTML/CSS</span>
-                <span>EmailJS</span>
-              </div>
-              <div class="card-hint">
-                <i class="fas fa-click-pointer"></i> Click para walkthrough
-              </div>
-            </div>
-          </div>
-
-          <!-- NoteNinja Card -->
-          <div class="project-card-3d clickable-card" data-project="noteninja">
-            <div class="card-content visible-card">
-              <div class="card-icon">📝</div>
-              <h3>NoteNinja</h3>
-              <p class="card-desktop">Herramienta educativa que automatiza creación de materiales de estudio</p>
-              <p class="card-mobile">Educación</p>
-              <div class="card-tech">
-                <span>Python</span>
-                <span>PyPDF2</span>
-                <span>Flask</span>
-              </div>
-              <div class="card-hint">
-                <i class="fas fa-click-pointer"></i> Click para walkthrough
-              </div>
-            </div>
-          </div>
-
-          <!-- Dogs and Cats RD Card -->
-          <div class="project-card-3d clickable-card" data-project="dogsandcatsrd">
-            <div class="card-content visible-card">
-              <div class="card-icon">📺</div>
-              <h3>Dogs and Cats RD</h3>
-              <p class="card-desktop">Landing Page para empresa de servicios veterinarios.</p>
-              <p class="card-mobile">Campaña</p>
-              <div class="card-tech">
-                <span>HTML</span>
+                <i class="fab fa-react" style="color:#61dafb"></i>
                 <span>React</span>
-                <span>CSS</span>
               </div>
-              <div class="card-hint">
-                <i class="fas fa-click-pointer"></i> Click para walkthrough
+              <div class="floating-card card4">
+                <i class="fas fa-brain" style="color:#ff6b81"></i>
+                <span>ML / AI</span>
               </div>
             </div>
           </div>
         </div>
       </section>
 
-      <!-- RESUME & CONTACT SECTION - CORREGIDO: Links con estilo visible -->
-      <section id="resume" class="section">
+      <!-- ABOUT -->
+      <section id="about" class="section" hidden>
         <div class="section-header">
-          <h2 class="section-title"><i class="fas fa-file-lines"></i> Formación</h2>
+          <h2 class="section-title">
+            <i class="fas fa-user"></i> About Me
+          </h2>
           <div class="title-decoration"></div>
         </div>
-        
+
+        <div class="about-grid">
+          <div class="about-bio-card glass-card">
+            <div class="about-avatar">
+              <i class="fas fa-paint-brush"></i>
+            </div>
+            <div class="about-text">
+              <h3>Hey, I'm Tiffany 👋</h3>
+              <p>
+                I'm a final-year Graphic Design student at UNAPEC in Santo Domingo, DR, with a strong
+                focus on UI/UX and creative development. I don't just design — I build.
+              </p>
+              <p>
+                My background spans visual design, UX research, frontend development, and Python
+                backends. I've shipped real projects for real clients, including a full business
+                website for my dad's construction company, <strong>El Armador RD</strong>.
+              </p>
+              <p>
+                I'm also fluent in English at a C2 level and have a technical background in
+                audiovisual production from my time at Instituto San Juan Bautista and working
+                at Televida.
+              </p>
+
+              <div class="about-callout">
+                <i class="fas fa-bullseye"></i>
+                <span>
+                  Currently seeking a <strong>UI/UX or frontend/fullstack internship</strong> — I'm
+                  ready to contribute from day one.
+                </span>
+              </div>
+            </div>
+          </div>
+
+          <div class="about-skills-col">
+            <div class="about-skill-card glass-card">
+              <div class="about-skill-icon" style="background: linear-gradient(135deg,#6c5ce7,#00d2ff)">
+                <i class="fas fa-pen-ruler"></i>
+              </div>
+              <div>
+                <h4>Design</h4>
+                <p>Figma, wireframing, prototyping, UX research, user testing, visual systems</p>
+              </div>
+            </div>
+            <div class="about-skill-card glass-card">
+              <div class="about-skill-icon" style="background: linear-gradient(135deg,#00d2ff,#6c5ce7)">
+                <i class="fas fa-code"></i>
+              </div>
+              <div>
+                <h4>Frontend</h4>
+                <p>HTML5, CSS3, JavaScript, React, responsive design, accessibility</p>
+              </div>
+            </div>
+            <div class="about-skill-card glass-card">
+              <div class="about-skill-icon" style="background: linear-gradient(135deg,#ff6b81,#6c5ce7)">
+                <i class="fas fa-server"></i>
+              </div>
+              <div>
+                <h4>Backend & AI</h4>
+                <p>Python, Flask, REST APIs, NLP, ML embeddings, SQLite, PyPDF2</p>
+              </div>
+            </div>
+            <div class="about-skill-card glass-card">
+              <div class="about-skill-icon" style="background: linear-gradient(135deg,#fdcb6e,#ff6b81)">
+                <i class="fas fa-video"></i>
+              </div>
+              <div>
+                <h4>Audiovisual</h4>
+                <p>Video editing, Tricaster, broadcast production (Televida)</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="about-differentiator">
+          <h3>What makes me different</h3>
+          <div class="differentiator-grid">
+            <div class="diff-card">
+              <span class="diff-emoji">🎯</span>
+              <h4>Design → Code pipeline</h4>
+              <p>I go from Figma prototype to deployed app without handing anything off. Full ownership.</p>
+            </div>
+            <div class="diff-card">
+              <span class="diff-emoji">🏗️</span>
+              <h4>Real client experience</h4>
+              <p>I've built and shipped a website for a real operating business — not just course projects.</p>
+            </div>
+            <div class="diff-card">
+              <span class="diff-emoji">🤖</span>
+              <h4>AI-integrated projects</h4>
+              <p>I've built systems with NLP, semantic embeddings, and chatbot integration from scratch.</p>
+            </div>
+            <div class="diff-card">
+              <span class="diff-emoji">🌐</span>
+              <h4>Bilingual communicator</h4>
+              <p>C2 English means I can work with any team, read any doc, and present clearly.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SKILLS -->
+      <section id="skills" class="section" hidden>
+        <div class="section-header">
+          <h2 class="section-title"><i class="fas fa-code"></i> Skills</h2>
+          <div class="title-decoration"></div>
+        </div>
+
+        <div class="skills-showcase">
+          <div class="skill-bubble-group" id="skill-bubbles"></div>
+          <div class="skill-cards-grid" id="skill-cards"></div>
+        </div>
+      </section>
+
+      <!-- PROJECTS -->
+      <section id="projects" class="section" hidden>
+        <div class="section-header">
+          <h2 class="section-title"><i class="fas fa-rocket"></i> Projects</h2>
+          <div class="title-decoration"></div>
+        </div>
+        <p class="section-subtitle">Click any card or the Walkthrough button for full technical details.</p>
+
+        <div class="featured-section">
+          <div class="featured-label-row">
+            <i class="fas fa-star"></i> <span>Featured Work</span>
+          </div>
+          <div class="featured-grid" id="featured-projects"></div>
+        </div>
+
+        <div class="other-projects-section" id="other-projects-wrapper">
+          <div class="featured-label-row">
+            <i class="fas fa-folder-open"></i> <span>More Projects</span>
+          </div>
+          <div class="projects-grid-3d" id="other-projects"></div>
+        </div>
+      </section>
+
+      <!-- RESUME -->
+      <section id="resume" class="section" hidden>
+        <div class="section-header">
+          <h2 class="section-title"><i class="fas fa-file-lines"></i> Resume</h2>
+          <div class="title-decoration"></div>
+        </div>
+
         <div class="resume-modern-grid">
           <div class="resume-modern-card">
+            <h3 class="resume-card-title"><i class="fas fa-graduation-cap"></i> Education</h3>
             <div class="resume-timeline">
               <div class="timeline-item">
                 <div class="timeline-dot"></div>
                 <div class="timeline-content">
-                  <h3>Licenciatura en Diseño Gráfico</h3>
-                  <p class="timeline-place">UNAPEC · 2022 - presente</p>
-                  <p class="timeline-desc">Estudiante de término, enfoque UI/UX</p>
+                  <h4>B.S. Graphic Design</h4>
+                  <p class="timeline-place">UNAPEC · 2022 – Present</p>
+                  <p class="timeline-desc">Final-year student · Specialization: UI/UX Design</p>
                 </div>
               </div>
               <div class="timeline-item">
                 <div class="timeline-dot"></div>
                 <div class="timeline-content">
-                  <h3>Técnico Audiovisual</h3>
-                  <p class="timeline-place">Instituto San Juan Bautista · 2020-2022</p>
+                  <h4>Technical Degree in Audiovisual Production</h4>
+                  <p class="timeline-place">Instituto San Juan Bautista · 2020–2022</p>
+                  <p class="timeline-desc">Video editing, broadcast, Tricaster operation</p>
                 </div>
               </div>
               <div class="timeline-item">
                 <div class="timeline-dot"></div>
                 <div class="timeline-content">
-                  <h3>Cursos Google</h3>
-                  <p class="timeline-place">Marketing Digital · Competencias Digitales</p>
+                  <h4>Google Digital Marketing & Digital Skills</h4>
+                  <p class="timeline-place">Google · Online Certifications</p>
                 </div>
               </div>
             </div>
+
+            <h3 class="resume-card-title" style="margin-top: 2rem;">
+              <i class="fas fa-briefcase"></i> Experience
+            </h3>
+            <div class="resume-timeline">
+              <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                  <h4>Freelance Web Designer & Developer</h4>
+                  <p class="timeline-place">Self-employed · 2023 – Present</p>
+                  <p class="timeline-desc">
+                    Designed and built <strong>El Armador RD</strong> — a full business website for a
+                    real construction coordination company. Handled everything from UX research and
+                    Figma prototypes to deployment.
+                  </p>
+                </div>
+              </div>
+              <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                  <h4>Audiovisual Technician</h4>
+                  <p class="timeline-place">Televida · Santo Domingo</p>
+                  <p class="timeline-desc">Live production support, Tricaster operation, video editing.</p>
+                </div>
+              </div>
+            </div>
+
+            <a href="/cv-tiffany-deleon.pdf" download class="btn-download-cv">
+              <i class="fas fa-download"></i> Download Full CV (PDF)
+            </a>
+            <p class="cv-note">* PDF will be available once uploaded manually.</p>
           </div>
-          
+
           <div class="contact-modern-card">
-            <h3>Conectemos</h3>
+            <h3>Let's Connect</h3>
+
+            <div class="contact-availability">
+              <i class="fas fa-circle-dot"></i>
+              <span>Available for internships & junior roles</span>
+            </div>
+
             <div class="contact-info-modern">
               <a href="tel:8494045278" class="contact-item">
                 <i class="fas fa-phone-alt"></i>
@@ -277,81 +369,54 @@
                 <i class="fas fa-envelope"></i>
                 <span class="contact-text">paulettedeleondg@gmail.com</span>
               </a>
-              <a href="https://www.linkedin.com/in/paulettedeleon/" target="_blank" class="contact-item">
+              <a href="https://www.linkedin.com/in/paulettedeleon/" target="_blank" rel="noopener noreferrer" class="contact-item">
                 <i class="fab fa-linkedin"></i>
-                <span class="contact-text">LinkedIn</span>
+                <span class="contact-text">linkedin.com/in/paulettedeleon</span>
               </a>
-              <a href="https://github.com/PixXy-wEb" target="_blank" class="contact-item">
+              <a href="https://github.com/PixXy-wEb" target="_blank" rel="noopener noreferrer" class="contact-item">
                 <i class="fab fa-github"></i>
-                <span class="contact-text">GitHub</span>
+                <span class="contact-text">github.com/PixXy-wEb</span>
               </a>
             </div>
+
             <div class="contact-cta">
-              <p>📢 Disponible para oportunidades de pasantía</p>
+              <p>📢 Final-year student · Available for <strong>internships</strong></p>
+              <p style="margin-top: 0.5rem; font-size: 0.85rem;">UI/UX · Frontend · Fullstack</p>
+            </div>
+
+            <div class="lang-card">
+              <div class="lang-item">
+                <span class="lang-label">🇪🇸 Spanish</span>
+                <div class="lang-bar"><div class="lang-fill" style="width: 100%;"></div></div>
+                <span class="lang-level">Native</span>
+              </div>
+              <div class="lang-item">
+                <span class="lang-label">🇺🇸 English</span>
+                <div class="lang-bar"><div class="lang-fill" style="width: 95%;"></div></div>
+                <span class="lang-level">C2 Proficient</span>
+              </div>
             </div>
           </div>
         </div>
       </section>
 
-      <!-- BLOG SECTION -->
-      <section id="blog" class="section">
+      <!-- BLOG -->
+      <section id="blog" class="section" hidden>
         <div class="section-header">
           <h2 class="section-title"><i class="fas fa-pen-fancy"></i> Blog</h2>
           <div class="title-decoration"></div>
         </div>
-        
-        <div class="blog-modern-grid">
-          <div class="blog-card-vertical">
-            <div class="blog-category">Tutorial</div>
-            <h3>🎨 Introducción a Figma</h3>
-            <p>Componentes, auto layout y prototipado rápido.</p>
-            <div class="blog-meta">
-              <span><i class="far fa-calendar"></i> Jun 2025</span>
-            </div>
-          </div>
-          
-          <div class="blog-card-vertical">
-            <div class="blog-category">UX</div>
-            <h3>📱 UX Research desde cero</h3>
-            <p>Entrevistas y pruebas de usabilidad efectivas.</p>
-            <div class="blog-meta">
-              <span><i class="far fa-calendar"></i> May 2025</span>
-            </div>
-          </div>
-          
-          <div class="blog-card-vertical">
-            <div class="blog-category">Video</div>
-            <h3>🎬 Edición de video</h3>
-            <p>Consejos rápidos aprendidos en Televida.</p>
-            <div class="blog-meta">
-              <span><i class="far fa-calendar"></i> Abr 2025</span>
-            </div>
-          </div>
-          
-          <div class="blog-card-vertical">
-            <div class="blog-category">Diseño</div>
-            <h3>⚡ Diseño responsive</h3>
-            <p>Principios básicos para interfaces adaptables.</p>
-            <div class="blog-meta">
-              <span><i class="far fa-calendar"></i> Mar 2025</span>
-            </div>
-          </div>
-        </div>
+        <p class="section-subtitle">Thoughts on design, development, and everything in between.</p>
+        <div class="blog-modern-grid" id="blog-posts"></div>
       </section>
     </main>
-    
+
     <footer class="footer-modern">
-      <p>✶ diseñado con ♥︎ por Tiffany de León · 2025 ✶</p>
+      <p>© 2025 Tiffany de León · Designed & built with creativity, code, and coffee ☕</p>
     </footer>
   </div>
 
-  <!-- MODAL -->
-  <div id="projectModal" class="modal-neon">
-    <div class="modal-content-neon">
-      <button class="modal-close-neon">&times;</button>
-      <div id="modalContent" class="modal-body-neon"></div>
-    </div>
-  </div>
+  <div id="modal-root"></div>
 
   <script src="script.js"></script>
 </body>
